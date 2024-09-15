@@ -207,11 +207,13 @@ class OKX {
             .split('\n')
             .filter(Boolean);
 
+        const hoinangcap = false;
+        const hoiturbo = false;
+
         
-        //const nangcapfueltank = await this.askQuestion('Bạn có muốn nâng cấp fuel tank không? (y/n): ');
-        //const hoinangcap = 'n';
-        //const nangcapturbo = await this.askQuestion('Bạn có muốn nâng cấp Turbo Charger không? (y/n): ');
-        //const hoiturbo = 'n';
+        const nangcapfueltank = await this.askQuestion('Bạn có muốn nâng cấp fuel tank không? (y/n): ');
+        const nangcapturbo = await this.askQuestion('Bạn có muốn nâng cấp Turbo Charger không? (y/n): ');
+
 
         while (true) {
             for (let i = 0; i < userData.length; i++) {
