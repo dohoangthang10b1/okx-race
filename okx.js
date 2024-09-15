@@ -207,8 +207,8 @@ class OKX {
             .split('\n')
             .filter(Boolean);
 
-        const hoinangcap = false;
-        const hoiturbo = false;
+        const hoinangcap = 'n';
+        const hoiturbo = 'n';
 
         
         const nangcapfueltank = await this.askQuestion('Bạn có muốn nâng cấp fuel tank không? (y/n): ');
