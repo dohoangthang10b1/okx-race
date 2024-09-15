@@ -206,11 +206,12 @@ class OKX {
             .replace(/\r/g, '')
             .split('\n')
             .filter(Boolean);
-    
-        const nangcapfueltank = await this.askQuestion('Bạn có muốn nâng cấp fuel tank không? (y/n): ');
-        const hoinangcap = nangcapfueltank.toLowerCase() === 'y';
-        const nangcapturbo = await this.askQuestion('Bạn có muốn nâng cấp Turbo Charger không? (y/n): ');
-        const hoiturbo = nangcapturbo.toLowerCase() === 'y';
+
+        
+        //const nangcapfueltank = await this.askQuestion('Bạn có muốn nâng cấp fuel tank không? (y/n): ');
+        const hoinangcap = 'n';
+        //const nangcapturbo = await this.askQuestion('Bạn có muốn nâng cấp Turbo Charger không? (y/n): ');
+        const hoiturbo = 'n';
 
         while (true) {
             for (let i = 0; i < userData.length; i++) {
