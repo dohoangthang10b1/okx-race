@@ -154,39 +154,7 @@ class OKX {
         }
     }
 
-    async upgradeFuelTank(queryId) {
-        const url = `https://www.okx.com/priapi/v1/affiliate/game/racer/boost?t=${Date.now()}`;
-        const headers = { ...this.headers(), 'X-Telegram-Init-Data': queryId };
-        const payload = { id: 2 };
-    
-        try {
-            const response = await axios.post(url, payload, { headers });
-            if (response.data.code === 0) {
-                this.log('Nâng cấp Fuel Tank thành công!'.yellow);
-            } else {
-                this.log(`Lỗi nâng cấp Fuel Tank: ${response.data.msg}`.red);
-            }
-        } catch (error) {
-            this.log(`Lỗi rồi: ${error.message}`.red);
-        }
-    }
-
-    async upgradeTurbo(queryId) {
-        const url = `https://www.okx.com/priapi/v1/affiliate/game/racer/boost?t=${Date.now()}`;
-        const headers = { ...this.headers(), 'X-Telegram-Init-Data': queryId };
-        const payload = { id: 3 };
-    
-        try {
-            const response = await axios.post(url, payload, { headers });
-            if (response.data.code === 0) {
-                this.log('Nâng cấp Turbo Charger thành công!'.yellow);
-            } else {
-                this.log(`Lỗi nâng cấp Turbo Charger: ${response.data.msg}`.red);
-            }
-        } catch (error) {
-            this.log(`Lỗi rồi: ${error.message}`.red);
-        }
-    }
+ 
 
 
 
