@@ -103,7 +103,6 @@ class OKX {
             process.stdout.write(`===== Đã hoàn thành tất cả tài khoản, chờ ${i} giây để tiếp tục vòng lặp =====`);
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
-        console.log('');
     }
 
     async Countdown(seconds) {
@@ -112,7 +111,6 @@ class OKX {
             process.stdout.write(`[*] Chờ ${i} giây để tiếp tục...`);
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
-        console.log('');
     }
 
     extractUserData(queryId) {
