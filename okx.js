@@ -211,7 +211,7 @@ class OKX {
                     this.log(`${'Lỗi rồi:'.red} ${error.message}`);
                 }
             }
-            await this.waitWithCountdown(30);
+            await this.waitWithCountdown(900);
         }
     }    
 }
